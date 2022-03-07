@@ -1,0 +1,6 @@
+Data Peserta Jabar Coding Camp Golang
+1. Nama: Athirah Naurah Firdaus
+2. Email: fathirahnaurah@gmail.com
+3. Sistem Operasi yang digunakan: Windows
+4. Akun Gitlab/Github: athirahnaurah
+5. Akun Telegram: Athirah
