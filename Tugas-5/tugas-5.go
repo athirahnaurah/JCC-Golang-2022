@@ -92,6 +92,6 @@ func buahFavorit(name string, buah...string) (result string){
 	if last := len(buahfav) - 2; last >= 0 && buahfav[last] == ',' {
         buahfav = buahfav[:last]
     }
-	result = "halo nama saya john dan buah favorit saya adalah " + buahfav
+	result = "halo nama saya " + name +" dan buah favorit saya adalah " + buahfav
 	return result
 }
