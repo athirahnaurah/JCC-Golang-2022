@@ -16,17 +16,7 @@ type NilaiMahasiswa struct {
 	ID uint64 `json:"id"`
 }
 
-
 var nilaiNilaiMahasiswa = []NilaiMahasiswa{}
-
-// func NilaiMhs() []NilaiMahasiswa {
-// 	mhs := []NilaiMahasiswa{
-// 	  {"Athirah", "Basis Data", "A",80,1},
-// 	  {"Naurah", "Mobile", "A",80,2},
-// 	  {"Firdaus", "PPL", "B",70,3},
-// 	}
-// 	return mhs
-//   }
 
 func Auth(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
