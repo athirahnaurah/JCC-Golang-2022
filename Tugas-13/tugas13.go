@@ -109,12 +109,14 @@ func checkIndeks( nilai uint)string{
 
 
 func main() {
+	router := httprouter.New()
 	
 	http.Handle("/post_mhs", Auth(http.HandlerFunc(PostMahasiswa)))
 	http.HandleFunc("/get_mhs", getMahasiswa)
+	router.GET("",getMahasiswa)
 	fmt.Println("server running at http://localhost:8080")
 
-  if err := http.ListenAndServe(":8080", nil); err != nil {
+  if err := http.ListenAndServe(":8080", router); err != nil {
     log.Fatal(err)
   }
 
